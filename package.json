@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/newzavod/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/newzavod/frontend-project-lvl1/actions)",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/newzavod/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "W",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/newzavod/frontend-project-lvl1/issues"
