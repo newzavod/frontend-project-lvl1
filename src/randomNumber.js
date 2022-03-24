@@ -1,4 +1,6 @@
 import _ from 'lodash';
 
-const r = _.random(999);
-console.log(r);
+const number = _.random(100);
+// console.log(number);
+
+export default number;
