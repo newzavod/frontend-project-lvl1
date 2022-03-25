@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! STOP 11111111111111111111111111
-
 const startBrainGame = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
