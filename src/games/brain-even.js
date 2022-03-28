@@ -4,8 +4,8 @@ import _ from 'lodash';
 const startBrainGame = () => {
   const rulesOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
   const rounds = 3;
-  const textError = 'is wrong answer ; (.Correct answer was \'yes\'. \n Let\'s try again,';
-
+  const textErrorEvenNumber = 'is wrong answer ; (.Correct answer was \'yes\'. \n Let\'s try again,';
+  const textErrorOddNumber = 'is wrong answer ; (.Correct answer was \'no\'. \n Let\'s try again,';
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
@@ -18,7 +18,7 @@ const startBrainGame = () => {
       if (userAnswer === 'yes') {
         console.log('Correct!');
       } else {
-        console.log(`${userAnswer} ${textError} ${userName}!`);
+        console.log(`${userAnswer} ${textErrorEvenNumber} ${userName}!`);
         return;
       }
     }
@@ -26,7 +26,7 @@ const startBrainGame = () => {
       if (userAnswer === 'no') {
         console.log('Correct!');
       } else {
-        console.log(`${userAnswer} ${textError} ${userName}!`);
+        console.log(`${userAnswer} ${textErrorOddNumber} ${userName}!`);
         return;
       }
     }
