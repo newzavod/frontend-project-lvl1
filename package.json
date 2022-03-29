@@ -1,12 +1,14 @@
 {
-  "name": "@hexlet/code",
+  "name": "@hexlet/nodejs-package",
   "version": "0.1.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/newzavod/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/newzavod/frontend-project-lvl1/actions)",
+  "start": "npm run ",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-evenStart.js"
+    "brain-even": "bin/brain-evenStart.js",
+    "brain-calc": "bin/brain-calcStart.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/newzavod/frontend-project-lvl1.git"
   },
-  "author": "W",
+  "author": "newzavod",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/newzavod/frontend-project-lvl1/issues"
