@@ -11,7 +11,7 @@ const startBrainGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log(rulesOfGame);
   for (let i = 0; i < rounds; i += 1) {
-    const randomNumber = _.random(100);
+    const randomNumber = _.random(1, 100);
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (randomNumber % 2 === 0) {

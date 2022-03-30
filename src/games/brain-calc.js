@@ -11,8 +11,8 @@ const startBrainGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log(rulesOfGame);
   for (let i = 0; i < rounds; i += 1) {
-    const randomNumberFirst = _.random(10);
-    const randomNumberSecond = _.random(10);
+    const randomNumberFirst = _.random(1, 100);
+    const randomNumberSecond = _.random(1, 100);
     const listOperators = ['+', '-', '*'];
     const randomOperator = listOperators[_.random(listOperators.length - 1)];
     console.log(`Question: ${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
@@ -22,7 +22,7 @@ const startBrainGame = () => {
       if (Number(userAnswer) === resultSum) {
         console.log('Correct!');
       } else {
-        console.log(`${userAnswer} ${textError} '${resultSum}'! ${textErrorLine2} ${userName}`);
+        console.log(`'${userAnswer}' ${textError} '${resultSum}'! ${textErrorLine2} ${userName}`);
         return;
       }
     }
@@ -31,7 +31,7 @@ const startBrainGame = () => {
       if (Number(userAnswer) === resultSub) {
         console.log('Correct!');
       } else {
-        console.log(`${userAnswer} ${textError} '${resultSub}'! ${textErrorLine2} ${userName}`);
+        console.log(`'${userAnswer}' ${textError} '${resultSub}'! ${textErrorLine2} ${userName}`);
         return;
       }
     }
@@ -40,7 +40,7 @@ const startBrainGame = () => {
       if (Number(userAnswer) === resultMult) {
         console.log('Correct!');
       } else {
-        console.log(`${userAnswer} ${textError} "${resultMult}'! ${textErrorLine2} ${userName}`);
+        console.log(`'${userAnswer}' ${textError} '${resultMult}'! ${textErrorLine2} ${userName}`);
         return;
       }
     }
