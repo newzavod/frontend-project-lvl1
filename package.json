@@ -9,7 +9,8 @@
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-evenStart.js",
     "brain-calc": "bin/brain-calcStart.js",
-    "brain-gcd": "bin/brain-gcdStart.js"
+    "brain-gcd": "bin/brain-gcdStart.js",
+    "brain-progression": "bin/brain-progressionStart.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
