@@ -15,26 +15,24 @@ const startBrainGame = () => {
 
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    let flag = true;
+    let flag = 'yes';
     for (let n = 2; n < randomNumber; n += 1) {
       if (randomNumber % n === 0) {
-        flag = false;
+        flag = 'no';
       }
     }
     console.log(flag);
-    if (userAnswer === 'yes') {
-      if (flag === true) {
+    if (flag === 'yes') {
+      if (userAnswer === 'yes') {
         console.log('Correct!');
-        // break;
       } else {
         console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
         return;
       }
     }
-    if (userAnswer === 'no') {
-      if (flag === false) {
+    if (flag === 'no') {
+      if (userAnswer === 'no') {
         console.log('Correct!');
-        // break;
       } else {
         console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
         return;
