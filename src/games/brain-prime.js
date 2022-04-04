@@ -11,37 +11,37 @@ const startBrainGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log(rulesOfGame);
   for (let i = 0; i < rounds; i += 1) {
-    const randomNumber = _.random(1, 10);
+    const randomNumber = _.random(1, 30);
 
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    let flag = 'yes';
+    let flag = true;
     for (let n = 2; n < randomNumber; n += 1) {
       if (randomNumber % n === 0) {
-        flag = 'no';
-        break;
+        flag = false;
       }
     }
+    console.log(flag);
     if (userAnswer === 'yes') {
-      if (flag === 'yes') {
+      if (flag === true) {
         console.log('Correct!');
-        break;
+        // break;
       } else {
         console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
         return;
       }
     }
     if (userAnswer === 'no') {
-      if (flag === 'no') {
+      if (flag === false) {
         console.log('Correct!');
-        break;
+        // break;
       } else {
         console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
         return;
       }
     }
-    console.log(`Congratulations, ${userName} !`);
   }
+  console.log(`Congratulations, ${userName} !`);
 };
 
 export default startBrainGame;
