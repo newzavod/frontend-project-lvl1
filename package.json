@@ -10,7 +10,8 @@
     "brain-even": "bin/brain-evenStart.js",
     "brain-calc": "bin/brain-calcStart.js",
     "brain-gcd": "bin/brain-gcdStart.js",
-    "brain-progression": "bin/brain-progressionStart.js"
+    "brain-progression": "bin/brain-progressionStart.js",
+    "brain-prime": "bin/brain-primeStart.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

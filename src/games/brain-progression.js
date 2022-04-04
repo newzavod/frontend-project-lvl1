@@ -13,8 +13,8 @@ const startBrainGame = () => {
   for (let i = 0; i < rounds; i += 1) {
     let firstElementOfProgression = _.random(1, 100);
     const stepProgression = _.random(1, 10);
-    const lengthProgression = _.random(5, 11);
-    const missingIndexProgression = _.random(1, lengthProgression);
+    const lengthProgression = _.random(5, 10);
+    const missingIndexProgression = _.random(1, (lengthProgression - 1));
     const numbersProgression = [];
     const replaceMissingElement = '..';
 
@@ -24,7 +24,7 @@ const startBrainGame = () => {
     }
 
     const newArr = numbersProgression.splice(missingIndexProgression, 1, replaceMissingElement);
-    console.log(newArr);
+    console.log(newArr); // missing element
     const arrayToString = numbersProgression.toString();
     console.log(`Question: ${arrayToString}`);
     const userAnswer = readlineSync.question('Your answer: ');
