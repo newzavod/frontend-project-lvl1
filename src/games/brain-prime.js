@@ -26,7 +26,7 @@ const startBrainGame = () => {
       if (userAnswer === 'yes') {
         console.log('Correct!');
       } else {
-        console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
+        console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}!`);
         return;
       }
     }
@@ -34,7 +34,7 @@ const startBrainGame = () => {
       if (userAnswer === 'no') {
         console.log('Correct!');
       } else {
-        console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}`);
+        console.log(`'${userAnswer}' ${textError}! ${flag.toString()} ${textErrorLine2} ${userName}!`);
         return;
       }
     }

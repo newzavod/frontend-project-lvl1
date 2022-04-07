@@ -31,7 +31,7 @@ const startBrainGame = () => {
     if (Number(userAnswer) === Number(newArr)) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' ${textError} '${newArr}' ${textErrorLine2} ${userName}`);
+      console.log(`'${userAnswer}' ${textError} '${newArr}' ${textErrorLine2} ${userName}!`);
       return;
     }
   }

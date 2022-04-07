@@ -26,7 +26,7 @@ const startBrainGame = () => {
     if (Number(userAnswer) === randomNumberFirst) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' ${textError} '${randomNumberFirst}' ${textErrorLine2} ${userName}`);
+      console.log(`'${userAnswer}' ${textError} '${randomNumberFirst}' ${textErrorLine2} ${userName}!`);
       return;
     }
   }
