@@ -11,9 +11,8 @@ const startBrainGame = (rulesOfGame, gameCheck) => {
     console.log(`Question: ${getQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
-      console.log(typeof correctAnswer, correctAnswer); // !!!
       console.log(`${userAnswer} is wrong answer ; (.Correct answer was ${correctAnswer}.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');
