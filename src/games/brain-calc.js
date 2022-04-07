@@ -1,51 +1,32 @@
-import readlineSync from 'readline-sync';
 import _ from 'lodash';
+import startBrainGame from '../index.js';
 
-const startBrainGame = () => {
-  const rulesOfGame = 'What is the result of the expression?.';
-  const rounds = 3;
-  const textError = 'is wrong answer ; (.Correct answer was ';
-  const textErrorLine2 = '\n Let\'s try again,';
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  console.log(rulesOfGame);
-  for (let i = 0; i < rounds; i += 1) {
-    const randomNumberFirst = _.random(1, 100);
-    const randomNumberSecond = _.random(1, 100);
-    const listOperators = ['+', '-', '*'];
-    const randomOperator = listOperators[_.random(listOperators.length - 1)];
-    console.log(`Question: ${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
-    const userAnswer = readlineSync.question('Your answer: ');
+const rulesOfGame = 'What is the result of the expression?.';
+
+const gameCheck = () => {
+  const randomNumberFirst = _.random(1, 100);
+  const randomNumberSecond = _.random(1, 100);
+  const listOperators = ['+', '-', '*'];
+  const randomOperator = listOperators[_.random(listOperators.length - 1)];
+  const question = (`${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
+  const sum = (randomNumberFirst + randomNumberSecond);
+  const sub = (randomNumberFirst - randomNumberSecond);
+  const mult = (randomNumberFirst * randomNumberSecond);
+  const correctAnswer = () => {
     if (randomOperator === '+') {
-      const resultSum = randomNumberFirst + randomNumberSecond;
-      if (Number(userAnswer) === resultSum) {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' ${textError} '${resultSum}'! ${textErrorLine2} ${userName}`);
-        return;
-      }
+      return sum;
     }
     if (randomOperator === '-') {
-      const resultSub = randomNumberFirst - randomNumberSecond;
-      if (Number(userAnswer) === resultSub) {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' ${textError} '${resultSub}'! ${textErrorLine2} ${userName}`);
-        return;
-      }
+      return sub;
     }
     if (randomOperator === '*') {
-      const resultMult = randomNumberFirst * randomNumberSecond;
-      if (Number(userAnswer) === resultMult) {
-        console.log('Correct!');
-      } else {
-        console.log(`'${userAnswer}' ${textError} '${resultMult}'! ${textErrorLine2} ${userName}`);
-        return;
-      }
+      return mult;
     }
-  }
-  console.log(`Congratulations, ${userName} !`);
+    return [sum, sub, mult];
+  };
+  return [question, correctAnswer().toString()];
 };
 
-export default startBrainGame;
+const brainCalcGame = () => startBrainGame(rulesOfGame, gameCheck);
+
+export default brainCalcGame;
