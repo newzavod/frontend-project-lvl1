@@ -1,8 +1,6 @@
 import _ from 'lodash';
 import startBrainGame from '../index.js';
 
-// import readlineSync from 'readline-sync';
-// import _ from 'lodash';
 const rulesOfGame = 'What number is missing in the progression?';
 
 const gameCheck = () => {
@@ -16,11 +14,9 @@ const gameCheck = () => {
     firstElementOfProgression += stepProgression;
     numbersProgression.push(firstElementOfProgression);
   }
-
   const newArr = numbersProgression.splice(missingIndexProgression, 1, replaceMissingElement);
   const missingElement = newArr;
-  // console.log(missingElement); // missing element
-  const arrayToString = numbersProgression.toString();
+  const arrayToString = numbersProgression.join(' ');
   const question = (`${arrayToString}`);
 
   const correctAnswer = missingElement.toString();
