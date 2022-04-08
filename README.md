@@ -7,10 +7,17 @@
 The Brain Games (console games).
 ## Description
 
-The project consists of five simple mathematical console games.
-Each game has its own rules. They are shown after the greeting in the game.
-In each game there are three rounds, you need to answer only in accordance with the rules.
-To start the game, enter the name of the game and press enter. Have fun!
+This repository contains five console games that were create to check my first steps in JS. You can win by successfully answering 3 questions in a row in the selected game.
+To start the game, enter the name of the game and press enter.
+
+## Game list
+
+brain-even - check a number for evenness.
+brain-calc - calculate simple expressions.
+brain-gcd - calculate the greatest common divisor of 2 numbers.
+brain-prime - check a number for primality.
+brain-progression - calculate and enter missing number from progression.
+Have fun!
 ## Getting Started
 
 ### Dependencies
@@ -20,9 +27,11 @@ To start the game, enter the name of the game and press enter. Have fun!
 
 ### Installing
 
+* git clone https://github.com/newzavod/frontend-project-lvl1
+* cd frontend-project-lvl1/
 * make install
 * npm ci
-* npm link
+* npm link ( vj;tn gjyfljb,nmcz sudo)
 
 ### Executing program
 
@@ -43,5 +52,5 @@ brain-even
 ## Authors
 
 Contributors names and contact info: 
-Ktor
+ktor
 newzavod@gmail.com
