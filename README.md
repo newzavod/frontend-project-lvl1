@@ -26,14 +26,14 @@ An in-depth paragraph about your project and overview of use.
 
 * How to run the program
 * Step-by-step bullets
-```
+
 [![asciicast](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M.svg)](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M)
 [![asciicast](https://asciinema.org/a/C7CmszGGqxvOss3nhRsovmt9c.svg)](https://asciinema.org/a/C7CmszGGqxvOss3nhRsovmt9c)
 [![asciicast](https://asciinema.org/a/t6EoJNmKrqxkZJWslgztE87rK.svg)](https://asciinema.org/a/t6EoJNmKrqxkZJWslgztE87rK)
 [![asciicast](https://asciinema.org/a/tsrRT5lCFIJFY4LOQFHRj8bfL.svg)](https://asciinema.org/a/tsrRT5lCFIJFY4LOQFHRj8bfL)
 [![asciicast](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI.svg)](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI)
 
-```
+
 
 ## Help
 
