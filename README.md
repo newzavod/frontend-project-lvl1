@@ -50,6 +50,5 @@ brain-even
 
 ## Authors
 
-Contributors names and contact info: 
-ktor
-newzavod@gmail.com
+Contributor name: ktor,
+contact info: newzavod@gmail.com
