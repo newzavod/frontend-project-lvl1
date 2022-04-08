@@ -4,23 +4,25 @@
 
 # Project Title
 
-The project consists of five simple mathematical console games.
-
+The Brain Games (console games).
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
+The project consists of five simple mathematical console games.
+Each game has its own rules. they are shown after the greeting in the game.
+In each game there are three rounds, you need to answer only in accordance with the rules.
+To start the game, enter the name of the game and press enter. Have fun!
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* OS version:  Windows 10 (command line)
+               Ubuntu 16.10
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* make install
+* npm ci
+* npm link
 
 ### Executing program
 
@@ -34,13 +36,6 @@ An in-depth paragraph about your project and overview of use.
 [![asciicast](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI.svg)](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI)
 
 
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
