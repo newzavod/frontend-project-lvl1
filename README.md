@@ -7,7 +7,7 @@
 The Brain Games (console games).
 ## Description
 
-This repository contains five console games that were create to check my first steps in JS. You can win by successfully answering 3 questions in a row in the selected game.
+This repository contains five console games which were created to check my first steps in JS. You can win by successfully answering 3 questions in a row in the selected game.
 To start the game, enter the name of the game and press enter.
 Have fun!
 
@@ -19,7 +19,7 @@ Have fun!
 4. brain-prime - check a number for primality.
 5. brain-progression - calculate and enter missing number from progression.
 
-## Getting Started
+### Getting Started
 
 ### Dependencies
 
@@ -31,11 +31,10 @@ Have fun!
 * cd frontend-project-lvl1/
 * make install
 * npm ci
-* npm link (may need sudo)
+* npm link (you may need sudo)
 
-### Executing program
+### Example
 
-Here are the possible game options:
 brain-calc
 [![asciicast](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M.svg)](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M)
 brain-gcd
