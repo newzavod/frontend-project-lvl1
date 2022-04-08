@@ -8,14 +8,14 @@ The Brain Games (console games).
 ## Description
 
 The project consists of five simple mathematical console games.
-Each game has its own rules. they are shown after the greeting in the game.
+Each game has its own rules. They are shown after the greeting in the game.
 In each game there are three rounds, you need to answer only in accordance with the rules.
 To start the game, enter the name of the game and press enter. Have fun!
 ## Getting Started
 
 ### Dependencies
 
-* OS version:  Windows 10 (command line)
+* OS version:  Windows 10 (command line),
                Ubuntu 16.10
 
 ### Installing
@@ -26,19 +26,22 @@ To start the game, enter the name of the game and press enter. Have fun!
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-
+Here are the possible game options:
+brain-calc
 [![asciicast](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M.svg)](https://asciinema.org/a/uGUcH9ec9zay2ZHAErbh2Zt4M)
+brain-gcd
 [![asciicast](https://asciinema.org/a/C7CmszGGqxvOss3nhRsovmt9c.svg)](https://asciinema.org/a/C7CmszGGqxvOss3nhRsovmt9c)
+brain-progression
 [![asciicast](https://asciinema.org/a/t6EoJNmKrqxkZJWslgztE87rK.svg)](https://asciinema.org/a/t6EoJNmKrqxkZJWslgztE87rK)
+brain-prime
 [![asciicast](https://asciinema.org/a/tsrRT5lCFIJFY4LOQFHRj8bfL.svg)](https://asciinema.org/a/tsrRT5lCFIJFY4LOQFHRj8bfL)
+brain-even
 [![asciicast](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI.svg)](https://asciinema.org/a/oo1EpLoFbMgmOgGnWMG40N9jI)
 
 
 
 ## Authors
 
-Contributors names and contact info
-Vladimir
+Contributors names and contact info: 
+Ktor
 newzavod@gmail.com
