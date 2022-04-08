@@ -9,21 +9,21 @@ The Brain Games (console games).
 
 This repository contains five console games that were create to check my first steps in JS. You can win by successfully answering 3 questions in a row in the selected game.
 To start the game, enter the name of the game and press enter.
+Have fun!
 
 ## Game list
 
-brain-even - check a number for evenness.
-brain-calc - calculate simple expressions.
-brain-gcd - calculate the greatest common divisor of 2 numbers.
-brain-prime - check a number for primality.
-brain-progression - calculate and enter missing number from progression.
-Have fun!
+1. brain-even - check a number for evenness.
+2. brain-calc - calculate simple expressions.
+3. brain-gcd - calculate the greatest common divisor of 2 numbers.
+4. brain-prime - check a number for primality.
+5. brain-progression - calculate and enter missing number from progression.
+
 ## Getting Started
 
 ### Dependencies
 
-* OS version:  Windows 10 (command line),
-               Ubuntu 16.10
+* Node.js package (latest version)
 
 ### Installing
 
@@ -31,7 +31,7 @@ Have fun!
 * cd frontend-project-lvl1/
 * make install
 * npm ci
-* npm link ( vj;tn gjyfljb,nmcz sudo)
+* npm link (may need sudo)
 
 ### Executing program
 
