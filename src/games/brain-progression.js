@@ -3,7 +3,7 @@ import startBrainGame from '../index.js';
 
 const rulesOfGame = 'What number is missing in the progression?';
 
-const gameCheck = () => {
+const generateRound = () => {
   let firstElementOfProgression = _.random(1, 100);
   const stepProgression = _.random(1, 10);
   const lengthProgression = _.random(5, 10);
@@ -24,6 +24,6 @@ const gameCheck = () => {
   return [question, correctAnswer];
 };
 
-const brainProgressionGame = () => startBrainGame(rulesOfGame, gameCheck);
+const brainProgressionGame = () => startBrainGame(rulesOfGame, generateRound);
 
 export default brainProgressionGame;

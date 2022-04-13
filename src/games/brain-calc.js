@@ -2,11 +2,12 @@ import _ from 'lodash';
 import startBrainGame from '../index.js';
 
 const rulesOfGame = 'What is the result of the expression?.';
+const listOperators = ['+', '-', '*'];
 
-const gameCheck = () => {
+const generateRound = () => {
   const randomNumberFirst = _.random(1, 100);
   const randomNumberSecond = _.random(1, 100);
-  const listOperators = ['+', '-', '*'];
+  // const listOperators = ['+', '-', '*'];
   const randomOperator = listOperators[_.random(listOperators.length - 1)];
   const question = (`${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
   const sum = (randomNumberFirst + randomNumberSecond);
@@ -27,6 +28,6 @@ const gameCheck = () => {
   return [question, correctAnswer().toString()];
 };
 
-const brainCalcGame = () => startBrainGame(rulesOfGame, gameCheck);
+const brainCalcGame = () => startBrainGame(rulesOfGame, generateRound);
 
 export default brainCalcGame;

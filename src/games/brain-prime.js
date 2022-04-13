@@ -3,7 +3,7 @@ import startBrainGame from '../index.js';
 
 const rulesOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameCheck = () => {
+const generateRound = () => {
   const randomNumber = _.random(1, 30);
   const question = `${randomNumber}`;
 
@@ -25,6 +25,6 @@ const gameCheck = () => {
   return [question, correctAnswer()];
 };
 
-const brainPrimeGame = () => startBrainGame(rulesOfGame, gameCheck);
+const brainPrimeGame = () => startBrainGame(rulesOfGame, generateRound);
 
 export default brainPrimeGame;

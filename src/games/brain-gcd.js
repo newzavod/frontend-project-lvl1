@@ -3,7 +3,7 @@ import startBrainGame from '../index.js';
 
 const rulesOfGame = 'Find the greatest common divisor of given numbers.';
 
-const gameCheck = () => {
+const generateRound = () => {
   let randomNumberFirst = _.random(1, 100);
   let randomNumberSecond = _.random(1, 100);
   const question = (`${randomNumberFirst} ${randomNumberSecond}`);
@@ -21,6 +21,6 @@ const gameCheck = () => {
   return [question, correctAnswer().toString()];
 };
 
-const brainGcdGame = () => startBrainGame(rulesOfGame, gameCheck);
+const brainGcdGame = () => startBrainGame(rulesOfGame, generateRound);
 
 export default brainGcdGame;
