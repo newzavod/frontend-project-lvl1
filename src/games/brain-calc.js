@@ -4,11 +4,11 @@ import startBrainGame from '../index.js';
 const rulesOfGame = 'What is the result of the expression?';
 const listOperators = ['+', '-', '*'];
 
-const calc = (num1, num2, operator) => {
+const calc = (number1, number2, operator) => {
   switch (operator) {
-    case '+': return num1 + num2;
-    case '-': return num1 - num2;
-    case '*': return num1 * num2;
+    case '+': return number1 + number2;
+    case '-': return number1 - number2;
+    case '*': return number1 * number2;
     default:
       throw new Error(`Unsupported operator - ${operator}`);
   }
