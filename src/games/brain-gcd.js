@@ -2,23 +2,30 @@ import _ from 'lodash';
 import startBrainGame from '../index.js';
 
 const rulesOfGame = 'Find the greatest common divisor of given numbers.';
+// const getGcd = (num1, num2) => {
+//     while (randomNumberFirst !== randomNumberSecond) {
+//       if (randomNumberFirst > randomNumberSecond) {
+//         randomNumberFirst -= randomNumberSecond;
+//       } else {
+//         randomNumberSecond -= randomNumberFirst;
+//       }
+//     }
+//     return [randomNumberFirst];
+//   };
+const getGcd = (number1, number2) => {
+  if (number1 === 0) {
+    return number2;
+  } return getGcd(number2 % number1, number1);
+};
 
 const generateRound = () => {
-  let randomNumberFirst = _.random(1, 100);
-  let randomNumberSecond = _.random(1, 100);
+  const randomNumberFirst = _.random(1, 100);
+  const randomNumberSecond = _.random(1, 100);
   const question = (`${randomNumberFirst} ${randomNumberSecond}`);
 
-  const correctAnswer = () => {
-    while (randomNumberFirst !== randomNumberSecond) {
-      if (randomNumberFirst > randomNumberSecond) {
-        randomNumberFirst -= randomNumberSecond;
-      } else {
-        randomNumberSecond -= randomNumberFirst;
-      }
-    }
-    return [randomNumberFirst];
-  };
-  return [question, correctAnswer().toString()];
+  const correctAnswer = String(getGcd(randomNumberFirst, randomNumberSecond));
+
+  return [question, correctAnswer];
 };
 
 const brainGcdGame = () => startBrainGame(rulesOfGame, generateRound);
