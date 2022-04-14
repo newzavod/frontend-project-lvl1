@@ -21,7 +21,6 @@ const generateRound = () => {
   const question = (`${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
 
   const correctAnswer = String(calc(randomNumberFirst, randomNumberSecond, randomOperator));
-  console.log(correctAnswer);
   return [question, correctAnswer];
 };
 
