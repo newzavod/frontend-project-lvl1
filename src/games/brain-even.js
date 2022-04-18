@@ -2,6 +2,7 @@ import _ from 'lodash';
 import startBrainGame from '../index.js';
 
 const rulesOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {

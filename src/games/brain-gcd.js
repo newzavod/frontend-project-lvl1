@@ -2,16 +2,7 @@ import _ from 'lodash';
 import startBrainGame from '../index.js';
 
 const rulesOfGame = 'Find the greatest common divisor of given numbers.';
-// const getGcd = (num1, num2) => {
-//     while (randomNumberFirst !== randomNumberSecond) {
-//       if (randomNumberFirst > randomNumberSecond) {
-//         randomNumberFirst -= randomNumberSecond;
-//       } else {
-//         randomNumberSecond -= randomNumberFirst;
-//       }
-//     }
-//     return [randomNumberFirst];
-//   };
+
 const getGcd = (number1, number2) => {
   if (number1 === 0) {
     return number2;

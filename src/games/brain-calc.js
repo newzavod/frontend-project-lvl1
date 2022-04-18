@@ -2,6 +2,7 @@ import _ from 'lodash';
 import startBrainGame from '../index.js';
 
 const rulesOfGame = 'What is the result of the expression?';
+
 const listOperators = ['+', '-', '*'];
 
 const calc = (number1, number2, operator) => {
