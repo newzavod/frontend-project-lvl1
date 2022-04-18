@@ -3,10 +3,11 @@ import startBrainGame from '../index.js';
 
 const rulesOfGame = 'What number is missing in the progression?';
 
+let firstElementOfProgression = _.random(1, 100);
+const stepProgression = _.random(1, 10);
+const lengthProgression = _.random(5, 10);
+
 const getProgression = () => {
-  let firstElementOfProgression = _.random(1, 100);
-  const stepProgression = _.random(1, 10);
-  const lengthProgression = _.random(5, 10);
   const arithmeticProgression = [];
 
   for (let n = 1; n <= lengthProgression; n += 1) {
