@@ -21,8 +21,8 @@ const generateRound = () => {
   const randomOperator = listOperators[_.random(listOperators.length - 1)];
   const question = (`${randomNumberFirst} ${randomOperator} ${randomNumberSecond}`);
 
-  const correctAnswer = String(calc(randomNumberFirst, randomNumberSecond, randomOperator));
-  return [question, correctAnswer];
+  const answer = String(calc(randomNumberFirst, randomNumberSecond, randomOperator));
+  return [question, answer];
 };
 
 const brainCalcGame = () => startBrainGame(rulesOfGame, generateRound);

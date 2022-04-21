@@ -18,8 +18,8 @@ const generateRound = () => {
   const randomNumber = _.random(1, 100);
   const question = `${randomNumber}`;
 
-  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  const answer = isPrime(randomNumber) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 const brainPrimeGame = () => startBrainGame(rulesOfGame, generateRound);

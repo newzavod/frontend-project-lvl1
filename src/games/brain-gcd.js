@@ -14,9 +14,9 @@ const generateRound = () => {
   const randomNumberSecond = _.random(1, 100);
   const question = (`${randomNumberFirst} ${randomNumberSecond}`);
 
-  const correctAnswer = String(getGcd(randomNumberFirst, randomNumberSecond));
+  const answer = String(getGcd(randomNumberFirst, randomNumberSecond));
 
-  return [question, correctAnswer];
+  return [question, answer];
 };
 
 const brainGcdGame = () => startBrainGame(rulesOfGame, generateRound);
